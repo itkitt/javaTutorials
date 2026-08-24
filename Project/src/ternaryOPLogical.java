@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
-public class ternary_operator {
+// && = And
+// || = Or
+// ! = Not
+
+public class ternaryOPLogical {
     public static void main (String[] args){
 
         // Tests yes/or or if/else
@@ -10,7 +14,8 @@ public class ternary_operator {
         System.out.print("Enter a number: ");
         num = input.nextInt();
 
-        if(num >= 0){
+        // 0 - 9
+        if(num >= 0 && num < 10){
             System.out.println("This number is positive");
             if(num > 10){
                 System.out.println("This number is greater than 10");
@@ -19,6 +24,11 @@ public class ternary_operator {
                 System.out.println("This number is less than or equal to 10");
             }
         }
+        // 10 - 20
+        else if(num >= 10 && num <= 20){
+            System.out.println("This number is between 10 and 20");
+        }
+        // <0
         else{
             System.out.println("This number is negative");
             if(num > 10){
